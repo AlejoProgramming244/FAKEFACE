@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FaceFake Salas</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <button id="exit" onclick="exit()" class="glyphicon glyphicon-log-out btn btn-danger"> SALIR</button>
+
+        <center>
+
+            <h1 class="header">
+                FaceFake
+            </h1>
+
+            <h1 id="user_name"></h2>
+
+            <div class="form-group login_div">
+                Añadir Grupo
+                <input type="text" id="input_FFRoom" class="form-control" placeholder="Añade tu grupo de escritura">
+            </div>
+
+            <button onclick="addRoom();" class="btn btn-success">Añadir Grupo</button>
+
+            <h3>SALAS EN TENDENCIA</h3>
+        
+            <div id="salida" style="text-align: left; margin-bottom: 70px;"></div>
+        </center>
+    </div>
+    <script src="FaceFake.js"></script>
+</body>
